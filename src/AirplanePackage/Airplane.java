@@ -4,11 +4,14 @@
 // Written by: Artur Gubaidullin 40208924
 // -----------------------------------------------------
 
+
 package AirplanePackage;
+
+import driver.FlyingObjects;
 
 import java.util.Objects;
 
-public class Airplane {
+public class Airplane extends FlyingObjects {
 
     protected String brand;
     protected double price;

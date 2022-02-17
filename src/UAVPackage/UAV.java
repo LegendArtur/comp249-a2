@@ -7,7 +7,9 @@
 
 package UAVPackage;
 
-public class UAV {
+import driver.FlyingObjects;
+
+public class UAV extends FlyingObjects {
 
     protected double weight;
     protected double price;
