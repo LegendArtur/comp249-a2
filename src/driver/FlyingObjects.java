@@ -1,4 +1,5 @@
 package driver;
 
-public abstract class FlyingObjects {
+public class FlyingObjects {
+
 }

@@ -35,7 +35,9 @@ public class Driver
 
         System.out.println("-------------------------------------------------------------\nWelcome to the Flying Object Equivalence program by Artur Gubaidullin\n-------------------------------------------------------------");
 
-        FlyingObjects[] flyingObjects1 = new FlyingObjects[]{};
+        FlyingObjects[] flyingObjects1 = new FlyingObjects[]{
+
+        };
 
         System.out.println("The least expensive UAV is " + findLeastExpensiveUAV(flyingObjects1).toString());
     }
