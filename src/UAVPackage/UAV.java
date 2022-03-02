@@ -46,9 +46,9 @@ public class UAV extends FlyingObjects {
     }
 
     public String toString() {
-        return "This UAV has the following info:" +
+        return "This " + getClass().getSimpleName() + " has the following info:" +
                 "\n- weight (in pounds)= " + weight +
-                ",\n- price=" + price;
+                ",\n- price= " + price;
     }
 
     public boolean equals(Object o) {

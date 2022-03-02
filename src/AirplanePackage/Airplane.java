@@ -60,7 +60,7 @@ public class Airplane extends FlyingObjects {
     }
 
     public String toString() {
-        return "This " + this.getClass().toString() + " has the following description:" +
+        return "This " + this.getClass().getSimpleName() + " has the following description:\n" +
                 "- brand= " + brand +
                 ",\n- price= " + price +
                 ",\n- horsepower= " + horsepower;

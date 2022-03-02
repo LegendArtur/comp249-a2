@@ -58,7 +58,7 @@ public class MAV extends UAV {
     public String toString() {
         return super.toString() +
                 ",\n- model= " + model +
-                ",\n size= " + size;
+                ",\n- size= " + size;
     }
 
     public boolean equals(Object o) {
