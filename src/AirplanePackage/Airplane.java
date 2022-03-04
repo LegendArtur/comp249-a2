@@ -11,6 +11,14 @@ import driver.FlyingObjects;
 
 import java.util.Objects;
 
+
+/**
+ * Airplane class. It simulates a real life player.
+ * @author Artur Gubaidullin
+ * @see <P>COMP249
+ * <P>Assignment #2
+ * <P>Due Date 04/03/2022
+ */
 public class Airplane extends FlyingObjects {
 
     protected String brand;

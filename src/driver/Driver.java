@@ -1,3 +1,9 @@
+// -----------------------------------------------------
+// Assignment #2
+// Question: Part 1
+// Written by: Artur Gubaidullin 40208924
+// -----------------------------------------------------
+
 package driver;
 
 import AgriculturalMAVPackages.AgriculturalDrone;
@@ -7,9 +13,14 @@ import HelicopterQuadcopterPackage.*;
 import MultirotorPackage.Multirotor;
 import UAVPackage.UAV;
 
-import javax.sound.midi.Soundbank;
-
-
+/**
+ * Artur Gubaidullin
+ * COMP249
+ * Assignment #2
+ * Due Date 04/03/2022
+ *
+ * This is Part I of the Assignment #2.
+ */
 public class Driver
 {
     public static void main(String[] args) {
@@ -54,7 +65,7 @@ public class Driver
 
 
         System.out.println("Testing equals() method of two objects of helicopter and uav2:");
-        if ((helicopter.equals(uav))) {
+        if ((helicopter.equals(quadcopter))) {
             System.out.println("-helicopter equals uav2");
         } else {
             System.out.println("-helicopter doesn't equal uav2");
@@ -89,6 +100,10 @@ public class Driver
         System.out.println("Thank you for using my program.");
     }
 
+    /**
+     * Looks for most and least expensive UAVs.
+     * @param flyingObjects Flying Objects array in which we will look for expensive UAVs
+     */
     private static void findLeastExpensiveUAV(FlyingObjects[] flyingObjects) {
 
         UAV[] UAVs = new UAV[]{};

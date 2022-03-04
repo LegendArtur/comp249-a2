@@ -11,6 +11,13 @@ import UAVPackage.UAV;
 
 import java.util.Objects;
 
+/**
+ * MAV class. It simulates a real life player.
+ * @author Artur Gubaidullin
+ * @see <P>COMP249
+ * <P>Assignment #2
+ * <P>Due Date 04/03/2022
+ */
 public class MAV extends UAV {
 
     private String model;
