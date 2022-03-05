@@ -14,12 +14,11 @@ import MultirotorPackage.Multirotor;
 import UAVPackage.UAV;
 
 /**
- * Artur Gubaidullin
- * COMP249
- * Assignment #2
- * Due Date 04/03/2022
- *
- * This is Part I of the Assignment #2.
+ * Driver for Part 1
+ * @author Artur Gubaidullin
+ * @see <P>COMP249
+ * <P>Assignment #2
+ * <P>Due Date 04/03/2022
  */
 public class Driver
 {
