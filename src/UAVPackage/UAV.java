@@ -9,6 +9,13 @@ package UAVPackage;
 
 import driver.FlyingObjects;
 
+/**
+ * UAV class.
+ * @author Artur Gubaidullin
+ * @see <P>COMP249
+ * <P>Assignment #2
+ * <P>Due Date 04/03/2022
+ */
 public class UAV extends FlyingObjects {
 
     protected double weight;
@@ -56,6 +63,10 @@ public class UAV extends FlyingObjects {
         if (o == null || this.getClass() != o.getClass()) return false;
         UAV uav = (UAV) o;
         return Double.compare(uav.weight, weight) == 0 && Double.compare(uav.price, price) == 0;
+    }
+
+    public UAV copy() {
+        return new UAV(this);
     }
 
 }

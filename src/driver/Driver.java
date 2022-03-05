@@ -64,11 +64,11 @@ public class Driver
 
 
 
-        System.out.println("Testing equals() method of two objects of helicopter and uav2:");
+        System.out.println("Testing equals() method of two objects of helicopter and quadcopter:");
         if ((helicopter.equals(quadcopter))) {
-            System.out.println("-helicopter equals uav2");
+            System.out.println("-helicopter equals quadcopter");
         } else {
-            System.out.println("-helicopter doesn't equal uav2");
+            System.out.println("-helicopter doesn't equal quadcopter");
         }
 
         System.out.println("-------------------------------------------------------------");

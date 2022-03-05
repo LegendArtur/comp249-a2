@@ -1,6 +1,6 @@
 // -----------------------------------------------------
 // Assignment #2
-// Question: Part 2 (that doesn't work)
+// Question: Part 2 (that does work)
 // Written by: Artur Gubaidullin 40208924
 // -----------------------------------------------------
 
@@ -16,16 +16,16 @@ import MultirotorPackage.Multirotor;
 import UAVPackage.UAV;
 
 /**
- * Driver for Part 2
+ * Driver for Part 2, but that actually works.
  * @author Artur Gubaidullin
  * @see <P>COMP249
  * <P>Assignment #2
  * <P>Due Date 04/03/2022
  */
-public class DriverPart2 {
+public class DriverPart2work {
 
     /**
-     * copies passed FlyingObjectsArray (doesn't actually work)
+     * copies passed FlyingObjectsArray
      * @param flyingObjects an array of FlyingObjects
      * @return returns a copy of the passed array of FlyingObjects
      */
@@ -34,7 +34,7 @@ public class DriverPart2 {
         FlyingObjects[] newFlyingObjects = new FlyingObjects[flyingObjects.length];
 
         for (int i = 0; i < flyingObjects.length; i++) {
-            newFlyingObjects[i] = new FlyingObjects(flyingObjects[i]);
+            newFlyingObjects[i] = flyingObjects[i].copy();
         }
 
         return newFlyingObjects;

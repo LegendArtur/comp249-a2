@@ -12,7 +12,7 @@ import UAVPackage.UAV;
 import java.util.Objects;
 
 /**
- * MAV class. It simulates a real life player.
+ * MAV class.
  * @author Artur Gubaidullin
  * @see <P>COMP249
  * <P>Assignment #2
@@ -73,6 +73,10 @@ public class MAV extends UAV {
         if (o == null || getClass() != o.getClass()) return false;
         MAV mav = (MAV) o;
         return Double.compare(mav.size, size) == 0 && Objects.equals(model, mav.model);
+    }
+
+    public MAV copy() {
+        return new MAV(this);
     }
 
 }

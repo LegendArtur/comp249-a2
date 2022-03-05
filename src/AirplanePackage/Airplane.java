@@ -13,7 +13,7 @@ import java.util.Objects;
 
 
 /**
- * Airplane class. It simulates a real life player.
+ * Airplane class.
  * @author Artur Gubaidullin
  * @see <P>COMP249
  * <P>Assignment #2
@@ -79,5 +79,9 @@ public class Airplane extends FlyingObjects {
         if (o == null || getClass() != o.getClass()) return false;
         Airplane airplane = (Airplane) o;
         return Double.compare(airplane.price, price) == 0 && horsepower == airplane.horsepower && Objects.equals(brand, airplane.brand);
+    }
+
+    public Airplane copy() {
+        return new Airplane(this);
     }
 }

@@ -11,7 +11,7 @@ import UAVPackage.UAV;
 import java.util.Objects;
 
 /**
- * AgriculturalDrone class. It simulates a real life player.
+ * AgriculturalDrone class.
  * @author Artur Gubaidullin
  * @see <P>COMP249
  * <P>Assignment #2
@@ -72,6 +72,10 @@ public class AgriculturalDrone extends UAV {
         if (!super.equals(o)) return false;
         AgriculturalDrone that = (AgriculturalDrone) o;
         return carryCapacity == that.carryCapacity && Objects.equals(brand, that.brand);
+    }
+
+    public AgriculturalDrone copy() {
+        return new AgriculturalDrone(this);
     }
 
 }

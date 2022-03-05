@@ -9,7 +9,7 @@ package HelicopterQuadcopterPackage;
 import AirplanePackage.Airplane;
 
 /**
- * Helicopter class. It simulates a real life player.
+ * Helicopter class.
  * @author Artur Gubaidullin
  * @see <P>COMP249
  * <P>Assignment #2
@@ -85,6 +85,10 @@ public class Helicopter extends Airplane{
         if (!super.equals(o)) return false;
         Helicopter that = (Helicopter) o;
         return numberOfCylinders == that.numberOfCylinders && creationYear == that.creationYear && passengerCapacity == that.passengerCapacity;
+    }
+
+    public Helicopter copy() {
+        return new Helicopter(this);
     }
 
 }

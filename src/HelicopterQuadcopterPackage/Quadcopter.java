@@ -7,7 +7,7 @@
 
 package HelicopterQuadcopterPackage;
 /**
- * Quadcopter class. It simulates a real life player.
+ * Quadcopter class.
  * @author Artur Gubaidullin
  * @see <P>COMP249
  * <P>Assignment #2
@@ -55,6 +55,10 @@ public class Quadcopter extends Helicopter {
         if (!super.equals(o)) return false;
         Quadcopter that = (Quadcopter) o;
         return maxFlyingSpeed == that.maxFlyingSpeed;
+    }
+
+    public Quadcopter copy() {
+        return new Quadcopter(this);
     }
 
 }

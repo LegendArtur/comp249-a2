@@ -8,8 +8,13 @@ package MultirotorPackage;
 
 import HelicopterQuadcopterPackage.Helicopter;
 
-import java.util.Objects;
-
+/**
+ * Multirotor class.
+ * @author Artur Gubaidullin
+ * @see <P>COMP249
+ * <P>Assignment #2
+ * <P>Due Date 04/03/2022
+ */
 public class Multirotor extends Helicopter {
 
     private int numberOfRotors;
@@ -52,6 +57,10 @@ public class Multirotor extends Helicopter {
         if (!super.equals(o)) return false;
         Multirotor that = (Multirotor) o;
         return numberOfRotors == that.numberOfRotors;
+    }
+
+    public Multirotor copy() {
+        return new Multirotor(this);
     }
 
 }
