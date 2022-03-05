@@ -86,6 +86,9 @@ public class DriverPart2work {
             System.out.print(flyingObject.getClass().getSimpleName() + ", ");
         }
 
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("Thank you for using my program.");
+
     }
 
 }
